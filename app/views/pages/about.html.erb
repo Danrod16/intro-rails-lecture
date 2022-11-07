@@ -1,0 +1,12 @@
+<h1>Hello from about 👍</h1>
+
+<h2>Our Team</h2>
+<form action="/about">
+  <input type="text" name="first_name" placeholder="Search..." value="<%= params[:first_name] %>">
+  <input type="submit">
+</form>
+<ul>
+  <% @members.each do |member| %>
+  <li><%= member %></li>
+  <% end %>
+</ul>
